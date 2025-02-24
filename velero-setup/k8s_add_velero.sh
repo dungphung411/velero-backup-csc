@@ -1,4 +1,4 @@
-# file nay de install plugin velero cho k8s ( giup luu tru thong qua S3)
+# File nay de install plugin velero cho k8s ( giup luu tru thong qua S3)
 
 #AWS
 # velero install \
@@ -8,8 +8,6 @@
 #     --backup-location-config region=ca-central-1 \         # dien region cua bucket
 #     --use-volume-snapshots=false \
 #     --secret-file ./credentials-velero \
-
-
 
 #Cloudian 
     velero install \
