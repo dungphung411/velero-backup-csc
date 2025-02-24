@@ -11,7 +11,7 @@
 
 
 
-
+#Cloudian 
     velero install \
     --provider aws \
     --plugins velero/velero-plugin-for-aws:v1.11.0 \  #latest version is 1.11.0 ( sau nay ko biet co update ko)
