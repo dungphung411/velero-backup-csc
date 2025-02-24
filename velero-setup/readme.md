@@ -22,7 +22,10 @@ velero restore logs <RESTORE_NAME>      # doc logs ban restore minh muon
 ```
 
 ## Setup velero 
-Đảm bảo máy chạy đã cài kubectl, và đã kết nối với cluster K8S cần backup
+Đảm bảo máy chạy đã cài kubectl, và đã kết nối với cluster K8S cần backup. <br>
+Sửa file credentials_velero với access key và secret key bạn có.
+
+
 ```bash
 #vao folder minh muon clone ve, neu bi loi hay chay lai voi quyen root
 git clone https://github.com/dungphung411/velero-backup-csc.git
