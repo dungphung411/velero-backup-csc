@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: cloudian-pv
+  name: cloudian-pv-backend
 spec:
   capacity:
     storage: 10Gi
