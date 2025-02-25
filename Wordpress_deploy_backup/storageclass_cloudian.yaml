@@ -1,0 +1,26 @@
+# apiVersion: storage.k8s.io/v1
+# kind: StorageClass
+# metadata:
+#   name: cloudian
+# provisioner: csi.s3.amazonaws.com
+# parameters:
+#   type: s3
+#   # Replace <YOUR_CLOUDIAN_ENDPOINT> with your Cloudian endpoint URL
+#   endpoint: http://10.200.3.161
+#   region: hn  # Replace with your specific region
+#   bucket: storage-k8s
+#   accessKeyID: <your>
+#   secretAccessKey: <your>
+
+
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: cloudian-storage-class
+provisioner: cloudian.com/hyperstore
+parameters:
+  region: hn
+  bucket: my-bucket
+  accessKey: my-access-key
+  secretKey: my-secret-key
+  endpointUrl: https://cloudian.example.com
