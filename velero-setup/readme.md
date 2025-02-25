@@ -9,6 +9,8 @@
    velero get backup-location # kiem tra xem da ket noi voi backup storage chua (s3)
    velero backup create <NAME> --selector app=<NAME> # co the la bat cu loai kind nao : storage, pvc, deployment, svc, secret, metric,...
    velero backup create <NAME> --include-namespaces <NAMESPACE> # recommend dung cai nay
+   velero backup create my-backup --include-namespaces <namespace> --include-resources storageclasses --selector storageclass=default-storageclass  # backup data lan config 
+
    velero backup describe <NAME> #hien thi thong tin ve backup
    velero backup get #list tat ca cac backup o kho luu tru (s3)
 
