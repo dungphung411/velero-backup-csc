@@ -22,7 +22,7 @@
   velero install \
     --provider aws \
     --plugins velero/velero-plugin-for-aws:v1.11.0 \  #latest version is 1.11.0 ( sau nay ko biet co update ko)
-    --bucket velero-backup \                          # server cloudian cua Trucnv
+    --bucket snapshot-backup \                          # server cloudian cua Trucnv
     --backup-location-config region=hn,s3ForcePathStyle=true,s3Url=http://10.200.3.161 \       # url endpoint cua cloudian
     --use-volume-snapshots=true \
     --secret-file ./credentials-velero
