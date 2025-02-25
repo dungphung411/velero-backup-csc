@@ -25,4 +25,4 @@
     --bucket snapshot-backup \                         
     --backup-location-config region=hn,s3ForcePathStyle=true,s3Url=http://10.200.3.161 \    
     --use-volume-snapshots=true \
-    --secret-file ./credentials-velero
+    --secret-file ./credentials_velero
