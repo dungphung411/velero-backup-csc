@@ -32,6 +32,6 @@ Sửa file credentials_velero với access key và secret key bạn có.
 #vao folder minh muon clone ve, neu bi loi hay chay lai voi quyen root
 git clone https://github.com/dungphung411/velero-backup-csc.git
 cd ./velero-backup-csc/velero-setup 
-chmod +x k8s_add_velero.sh && chmod velero_install.sh
+chmod +x k8s_add_velero.sh && chmod +x velero_install.sh
 sh ./velero_install.sh && sh ./k8s_add_velero.sh
 ```
