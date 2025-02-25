@@ -10,6 +10,6 @@ spec:
   storageClassName: cloudian
   csi:
     driver: csi.s3.amazonaws.com
-    volumeHandle: my-cloudian-volume
+    volumeHandle: backend
     volumeAttributes:
       bucket: storage-k8s
