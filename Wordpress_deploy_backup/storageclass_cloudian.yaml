@@ -23,4 +23,4 @@ parameters:
   bucket: my-bucket
   accessKey: my-access-key
   secretKey: my-secret-key
-  endpointUrl: https://cloudian.example.com
+  endpointUrl: http://10.200.3.161
