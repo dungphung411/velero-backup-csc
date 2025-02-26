@@ -31,7 +31,7 @@ spec:
   persistentVolumeReclaimPolicy: Retain
   storageClassName: cloudian-storage-class
   csi:
-    driver: cloudian-com-hyperstore
+    driver: s3.csi.aws.com
     volumeHandle: mysql
     volumeAttributes:
       bucket: storage-k8s
