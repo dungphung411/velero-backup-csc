@@ -35,4 +35,6 @@ spec:
     driver: s3.csi.aws.com
     volumeHandle: wordpress
     volumeAttributes:
+      region: hn
       bucket: storage-k8s
+      
