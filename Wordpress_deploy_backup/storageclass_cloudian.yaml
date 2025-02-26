@@ -20,7 +20,7 @@ metadata:
 provisioner: cloudian.com/hyperstore
 parameters:
   region: hn
-  bucket: my-bucket
+  bucket: storage-k8s
   accessKey: 54c18bc8557ded6771c9
   secretKey: JMAXLY+9yHMRmjgtECrxD7pf6LU1ChLOjF/EpK+Y
   endpointUrl: http://10.200.3.161
