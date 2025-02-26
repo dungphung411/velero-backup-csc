@@ -1,3 +1,25 @@
+# apiVersion: v1
+# kind: PersistentVolume
+# metadata:
+#   name: cloudian-pv-wp
+# spec:
+#   capacity:
+#     storage: 10Gi
+#   accessModes:
+#     - ReadWriteOnce
+#   storageClassName: cloudian-storage-class
+#   persistentVolumeReclaimPolicy: Retain
+#   csi:
+#     driver: cloudian.com/hyperstore
+#     volumeHandle: wordpress
+#     volumeAttributes:
+#       region: hn
+#       bucket: storage-k8s
+#       endpointUrl: http://10.200.3.161
+#       accessKey: 54c18bc8557ded6771c9
+#       secretKey: JMAXLY+9yHMRmjgtECrxD7pf6LU1ChLOjF/EpK+Y
+
+
 apiVersion: v1
 kind: PersistentVolume
 metadata:
@@ -13,10 +35,4 @@ spec:
     driver: cloudian.com/hyperstore
     volumeHandle: wordpress
     volumeAttributes:
-      region: hn
       bucket: storage-k8s
-      endpointUrl: http://10.200.3.161
-      accessKey: 54c18bc8557ded6771c9
-      secretKey: JMAXLY+9yHMRmjgtECrxD7pf6LU1ChLOjF/EpK+Y
-
-
