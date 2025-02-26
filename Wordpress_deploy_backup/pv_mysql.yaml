@@ -33,7 +33,8 @@ spec:
   csi:
     driver: s3.csi.aws.com
     volumeHandle: mysql
-    volumeAttributes:
+    volumeAttributes
+      region: hn
       bucket: storage-k8s
      
 
