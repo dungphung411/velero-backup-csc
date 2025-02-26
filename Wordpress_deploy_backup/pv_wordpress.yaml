@@ -28,7 +28,7 @@ spec:
   capacity:
     storage: 10Gi
   accessModes:
-    - ReadWriteOnce
+    - ReadWriteMany
   storageClassName: cloudian-storage-class
   persistentVolumeReclaimPolicy: Retain
   csi:
