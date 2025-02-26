@@ -36,5 +36,5 @@ spec:
     volumeHandle: wordpress
     volumeAttributes:
       region: hn
-      bucket: storage-k8s
+      bucketName: storage-k8s
       
