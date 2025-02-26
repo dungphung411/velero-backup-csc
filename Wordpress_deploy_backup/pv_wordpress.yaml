@@ -32,7 +32,7 @@ spec:
   storageClassName: cloudian-storage-class
   persistentVolumeReclaimPolicy: Retain
   csi:
-    driver: cloudian-com-hyperstore
+    driver: s3.csi.aws.com
     volumeHandle: wordpress
     volumeAttributes:
       bucket: storage-k8s
