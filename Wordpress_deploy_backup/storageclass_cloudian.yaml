@@ -13,14 +13,22 @@
 #   secretAccessKey: <your>
 
 
+# apiVersion: storage.k8s.io/v1
+# kind: StorageClass
+# metadata:
+#   name: cloudian-storage-class
+# provisioner: cloudian.com/hyperstore
+# parameters:
+#   region: hn
+#   bucket: my-bucket
+#   accessKey: my-access-key
+#   secretKey: my-secret-key
+#   endpointUrl: https://cloudian.example.com
+
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:
-  name: cloudian-storage-class
-provisioner: cloudian.com/hyperstore
-parameters:
-  region: hn
-  bucket: my-bucket
-  accessKey: my-access-key
-  secretKey: my-secret-key
-  endpointUrl: https://cloudian.example.com
+  name: local-storage
+provisioner: kubernetes.io/no-provisioner
+volumeBindingMode: WaitForFirstConsumer
+

@@ -26,12 +26,13 @@
   #   --backup-location-config region=hn,s3ForcePathStyle=true,s3Url=http://10.200.3.161 \    
   #   --use-volume-snapshots=true \
   #   --secret-file ./credentials_velero
-
-velero install \
-    --provider aws \
-    --plugins velero/velero-plugin-for-aws:v1.11.0 \
-    --bucket s3-aws-test-k8s\
-    --backup-location-config region=ap-southeast-1,s3ForcePathStyle=true,s3Url=https://s3.amazonaws.com \
-    --snapshot-location-config region=ap-southeast-1 \
-    --use-node-agent \
+  
+#S3 aws cua Dungpm
+velero install `
+    --provider aws `
+    --plugins velero/velero-plugin-for-aws:v1.11.0 `
+    --bucket s3-aws-test-k8s `
+    --backup-location-config region=ap-southeast-1,s3ForcePathStyle=true,s3Url=https://s3.amazonaws.com `
+    --snapshot-location-config region=ap-southeast-1 `
+    --use-restic `
     --secret-file ./credentials-velero
