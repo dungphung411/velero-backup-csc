@@ -5,11 +5,8 @@ metadata:
   namespace: storagetest
 spec:
   accessModes:
-    - ReadWriteMany
+    - ReadWriteOnce
   resources:
     requests:
       storage: 20Gi
   storageClassName: ebs-sc
-
-
-
