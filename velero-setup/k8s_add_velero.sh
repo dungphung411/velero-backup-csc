@@ -2,12 +2,15 @@
 
 #AWS
 # velero install \
-#     --provider aws \
-#     --plugins velero/velero-plugin-for-aws:v1.11.0 \   #latest version is 1.11.0 ( sau nay ko biet co update ko)
-#     --bucket <BUCKET> \             # dien ten bucket da tao truoc do         
-#     --backup-location-config region=ca-central-1 \         # dien region cua bucket
-#     --use-volume-snapshots=false \
-#     --secret-file ./credentials-velero \
+#   --provider aws \
+#   --plugins velero/velero-plugin-for-aws:v1.1.0,velero/velero-plugin-for-csi:v0.7.1 \
+#   --bucket <YOUR_BUCKET> \
+#   --secret-file ./credentials-velero \
+#   --use-volume-snapshots=true \
+#   --use-node-agent=true \
+#   --backup-location-config region=<YOUR_REGION> \
+#   --snapshot-location-config region=<YOUR_REGION>
+# \
 
 #Cloudian backup old
     # velero install \
